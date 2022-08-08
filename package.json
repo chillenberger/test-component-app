@@ -1,12 +1,12 @@
 {
-  "name": "@my-domain/test-component",
+  "name": "test-component",
   "description": "A simple test package, test-component-app",
   "keywords": [
     "react",
     "components",
     "ui"
   ],
-  "version": "1.0.12",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "preinstall": "npm run co:login",
-    "co:login": "aws codeartifact login --tool npm --repository my-repo --domain my-domain",
+    "co:login": "aws codeartifact login --tool npm --repository test-component --domain my-domain",
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
